@@ -77,7 +77,7 @@ Predictive Insights → Model performance & feature importance
 
 Clone this repository
 
-git clone https://github.com/yourusername/medical_insurance_analysis.git
+git clone https://github.com/sohamwaghe/insurance_analysis.git
 cd medical_insurance_analysis
 
 
@@ -103,3 +103,4 @@ Highlights skills that align with data analyst internship roles.
 Boxplot: Smokers vs Non-Smokers charges
 
 Heatmap of correlations
+
