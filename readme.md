@@ -1,76 +1,105 @@
-Retail Sales Analysis & Strategic Report (2022-2025)
+📊 Medical Insurance Cost Analysis & Prediction
+🔎 Project Overview
 
-Project Overview
+This project analyzes the Medical Insurance Cost Dataset (1,338 records) to explore how demographic and lifestyle factors (age, BMI, smoking, region, etc.) impact insurance charges.
 
-This repository contains a comprehensive data analysis of a retail sales dataset spanning from January 2022 to January 2025. The primary objective of this project was to analyze transactional data to identify key sales trends, understand customer behavior, and uncover actionable insights to drive strategic business growth.
+It combines:
 
-The analysis culminates in a detailed strategic report and an interactive Power BI dashboard, both of which are included in this repository.
+Exploratory Data Analysis (EDA) → uncovering insights through statistical analysis & visualizations.
 
-![Dashboard1](images\dash3.png)
+Predictive Modeling → building regression models to forecast medical charges.
 
-Key Strategic Insights
-The analysis revealed several key insights that form the basis of our strategic recommendations:
+Dashboarding (Power BI) → presenting results in an executive, decision-friendly format.
 
-Market Stability & Brand Loyalty: The business demonstrates a stable market position with consistent daily revenue, pointing to a loyal customer base rather than volatile, trend-driven sales.
+👉 Goal: Showcase data analyst skills — from cleaning to insights to business storytelling — in a corporate-ready style.
 
-A Diversified and Resilient Portfolio: Revenue is well-distributed across multiple product categories, with 'Butchers' and 'Electric household essentials' leading. This diversification mitigates risk and provides a resilient revenue foundation.
+📂 Dataset
 
-The Omnichannel Advantage: Sales are almost perfectly split between Online (51%) and In-store (49%) channels, indicating a successful and balanced business model that effectively caters to the modern consumer.
+Source: Kaggle — Medical Cost Personal Dataset
 
-Broad Demographic Appeal: Customer payment preferences are evenly distributed among Cash, Digital Wallet, and Credit Card, demonstrating that the business appeals to a wide demographic with varied financial habits.
+Rows: 1,338 individuals
 
-Tools and Technologies
-Data Cleaning & Analysis: Python (Pandas, NumPy)
+Features:
 
-Data Visualization: Matplotlib, Seaborn
+age → Age of individual
 
-Interactive Dashboard: Microsoft Power BI
+sex → Male/Female
 
-IDE: Jupyter Notebook
+bmi → Body Mass Index
 
-Reporting: Markdown
+children → Number of dependents
 
-Repository Structure
-.
-├── 📂 data/
-│   └── retail_sales_dataset.csv      # The raw dataset used for analysis
-│
-├── 📂 notebooks/
-│   └── 1_Data_Cleaning.ipynb         # Notebook for cleaning and preparing the data
-│   └── 2_Exploratory_Data_Analysis.ipynb # Notebook for EDA and generating visualizations
-│
-├── 📂 report/
-│   └── retail_sales_analysis_report.md # The final strategic analysis report
-│   └── 📊 visualizations/               # Folder containing exported charts and graphs
-│       └── Screenshot 2025-09-23 124432.png
-│
-├── 📂 dashboard/
-│   └── Sales_Revenue_Dashboard.pbix  # The Power BI dashboard file
-│
-└── README.md                         # You are here!
+smoker → Smoker status (Yes/No)
 
-How to Use This Repository
-To explore this project, you can follow these steps:
+region → Residential area in the US
 
-Clone the repository:
+charges → Medical insurance cost billed (Target)
 
-git clone [https://github.com/your-username/retail-sales-analysis.git](https://github.com/your-username/retail-sales-analysis.git)
+🛠️ Tech Stack
 
-Navigate to the project directory:
+Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn) → Data cleaning, EDA, regression modeling
 
-cd retail-sales-analysis
+Power BI → Dashboard creation & business insights
 
-Review the Notebooks: Open the notebooks/ directory and run the Jupyter Notebooks (.ipynb files) to see the data cleaning and analysis process step-by-step.
+Jupyter/Colab → Analysis & documentation
 
-Explore the Dashboard: Open the Sales_Revenue_Dashboard.pbix file in Power BI Desktop to interact with the data visualizations.
+📊 Exploratory Data Analysis (EDA)
 
-Read the Final Report: For a full summary of the findings and strategic recommendations, please see the retail_sales_analysis_report.md file in the report/ directory.
+Key insights discovered:
 
-Key Deliverables
-Interactive Power BI Dashboard
-An interactive dashboard was created to allow for dynamic exploration of the sales data.
+Smokers pay 3x more on average than non-smokers.
 
-![Dashboard](images\dash1.png)
+BMI strongly impacts charges: Obese individuals face ~45% higher costs.
 
-Strategic Analysis Report
-A comprehensive report detailing the analysis process, key findings, and actionable strategic recommendations. The report can be found here.
+Age is positively correlated with charges — older individuals pay more.
+
+Regional differences are minor, but Southeast tends to have higher costs.
+
+Visualizations include:
+
+Age distribution by smoker status
+
+BMI distribution across categories
+
+Charges distribution (log-transformed)
+
+📈 Power BI Dashboard
+
+Created a 3-page dashboard:
+
+Executive Overview → KPIs + high-level trends
+
+Risk Factor Analysis → Impact of smoking, obesity, and age
+
+Predictive Insights → Model performance & feature importance
+
+🚀 How to Use
+
+Clone this repository
+
+git clone https://github.com/yourusername/medical_insurance_analysis.git
+cd medical_insurance_analysis
+
+
+Open the Jupyter notebook → run cleaning, EDA, and modeling.
+
+Load insurance_cleaned_for_powerbi.csv into Power BI → interact with the dashboard.
+
+🏆 Key Takeaways
+
+Demonstrates end-to-end data analysis workflow.
+
+Combines statistical insights + predictive modeling + business dashboards.
+
+Highlights skills that align with data analyst internship roles.
+
+📬 Contact
+
+👤 (Soham Waghe)
+📧 [sohamwaghe47@gmail.com
+]
+🔗 https://www.linkedin.com/in/sohamwaghe/
+
+Boxplot: Smokers vs Non-Smokers charges
+
+Heatmap of correlations
